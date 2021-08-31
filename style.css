@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#background{
+    background-image: linear-gradient(to right, red , yellow);
+}
+body{
+    font-family: "Lato", sans-serif;
+    background: linear-gradient(-65deg, rgba(170,110,36,1) 31%, rgba(236,168,20,1) 68%);
+}
+h2{
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.countdown{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.center-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.count-down{
+    display: flex;
+    justify-content: space-around;
+}
+.day,.hour,.minute,.second{
+    font-size: 3rem;
+}
