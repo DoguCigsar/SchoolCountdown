@@ -17,6 +17,21 @@ const countdown = () => {
     document.querySelector('.hour').innerText = leftHour;
     document.querySelector('.minute').innerText = leftMinute;
     document.querySelector('.second').innerText = leftSecond;
+
+    if(left < 0){
+        const past = now - objective;
+        const pastDay = Math.floor(past / day);
+        const pastHour = Math.floor((past % day) / hour);
+        const pastMinute = Math.floor((past % hour) / minute);
+        const pastSecond = Math.floor((past % minute) / second);
+
+        document.querySelector('.center-text').innerText = "Okulun Açık Oldugu Gün, Saat, Dakika, Saniye Miktarı";
+
+        document.querySelector('.day').innerText = pastDay;
+        document.querySelector('.hour').innerText = pastHour;
+        document.querySelector('.minute').innerText = pastMinute;
+        document.querySelector('.second').innerText = pastSecond;
+    }
 }
 
 setInterval(countdown, 1000)
