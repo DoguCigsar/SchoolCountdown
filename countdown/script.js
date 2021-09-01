@@ -13,10 +13,21 @@ const countdown = () => {
     const leftMinute = Math.floor((left % hour) / minute);
     const leftSecond = Math.floor((left % minute) / second);
 
+    const currentHour = new Date().getHours();
+    const currentMinute = new Date().getMinutes();
+    const currentSecond = new Date().getSeconds();
+
+    const currentDay = new Date().getDate();
+    const currentMonth = new Date().getMonth() + 1;
+    const currentYear = new Date().getFullYear();
+
     document.querySelector('.day').innerText = leftDay;
     document.querySelector('.hour').innerText = leftHour;
     document.querySelector('.minute').innerText = leftMinute;
     document.querySelector('.second').innerText = leftSecond;
+
+    document.querySelector('.time').innerText = "Saat : " + currentHour + ":" + currentMinute + ":" + currentSecond;
+    document.querySelector('.date').innerText = "Tarih : " + currentDay + "/" + currentMonth + "/" + currentYear;
 
     if(left < 0){
         const past = now - objective;
