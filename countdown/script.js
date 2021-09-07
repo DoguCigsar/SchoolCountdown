@@ -42,6 +42,7 @@ const countdown = () => {
         document.querySelector('.hour').innerText = pastHour;
         document.querySelector('.minute').innerText = pastMinute;
         document.querySelector('.second').innerText = pastSecond;
+        document.querySelector('.center-text').style.fontSize = "3rem";
     }
 }
 
