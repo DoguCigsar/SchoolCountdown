@@ -41,3 +41,17 @@ h2{
 .date{
   font-size: 1.5rem;
 }
+.einstein-button{
+    background-color: rgba(236,168,20,1); /* Green */
+    border: none;
+    padding: 20px 50px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50px;
+    opacity: 1;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.einstein-button:hover{
+    background-color: rgb(189, 122, 40);
+}

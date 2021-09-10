@@ -36,13 +36,13 @@ const countdown = () => {
         const pastMinute = Math.floor((past % hour) / minute);
         const pastSecond = Math.floor((past % minute) / second);
 
-        document.querySelector('.center-text').innerText = "Okulun Açık Oldugu Gün, Saat, Dakika, Saniye Miktarı";
+        document.querySelector('.center-text').innerText = "Okulun Açık Olduğu Süre";
 
         document.querySelector('.day').innerText = pastDay;
         document.querySelector('.hour').innerText = pastHour;
         document.querySelector('.minute').innerText = pastMinute;
         document.querySelector('.second').innerText = pastSecond;
-        document.querySelector('.center-text').style.fontSize = "3rem";
+        document.querySelector('.center-text').style.fontSize = "4rem";
     }
 }
 
